@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -189,7 +190,13 @@
       $('#datetimepicker').datetimepicker({
         locale: mnLocale,
         defaultDate: now,
-        format: 'LLLL'
+        format: 'LLLL',
+        icons: {
+          time: "fa fa-clock-o",
+          date: "fa fa-calendar",
+          up: "fa fa-arrow-up",
+          down: "fa fa-arrow-down"
+        }
       }).on('dp.change', function(e) {
         displayResults(e.date);
       });
@@ -197,34 +204,36 @@
     });
 
     function displayResults(date) {
-      $('#me1').text(moment(date).format('dddd, MMMM[ын] Do YYYY, h:mm:ss a'));
-      $('#me2').text(moment(date).format('dddd'));
-      $('#me3').text(moment(date).format('MMM Do YY'));
-      $('#me4').text(moment(date).format('YYYY оны MMMMын D'));
-      $('#me5').text(moment(date).format());
-      $('#me6').text(moment("20111031", "YYYYMMDD").fromNow());
-      $('#me7').text(moment("20120620", "YYYYMMDD").fromNow());
-      $('#me8').text(moment(date).startOf('day').fromNow());
-      $('#me9').text(moment(date).endOf('day').fromNow());
-      $('#me10').text(moment(date).startOf('hour').fromNow());
-      $('#me11').text(moment(date).subtract(10, 'days').calendar());
-      $('#me12').text(moment(date).subtract(6, 'days').calendar());
-      $('#me13').text(moment(date).subtract(3, 'days').calendar());
-      $('#me14').text(moment(date).subtract(1, 'days').calendar());
-      $('#me15').text(moment(date).calendar());
-      $('#me16').text(moment(date).add(1, 'days').calendar());
-      $('#me17').text(moment(date).add(3, 'days').calendar());
-      $('#me18').text(moment(date).add(10, 'days').calendar());
-      $('#me19').text(moment(date).format('LT'));
-      $('#me20').text(moment(date).format('LTS'));
-      $('#me21').text(moment(date).format('L'));
-      $('#me22').text(moment(date).format('l'));
-      $('#me23').text(moment(date).format('LL'));
-      $('#me24').text(moment(date).format('ll'));
-      $('#me25').text(moment(date).format('LLL'));
-      $('#me26').text(moment(date).format('lll'));
-      $('#me27').text(moment(date).format('LLLL'));
-      $('#me28').text(moment(date).format('llll'));
+      if (date) {
+        $('#me1').text(moment(date).format('dddd, MMMM[ын] Do YYYY, h:mm:ss a'));
+        $('#me2').text(moment(date).format('dddd'));
+        $('#me3').text(moment(date).format('MMM Do YY'));
+        $('#me4').text(moment(date).format('YYYY оны MMMMын D'));
+        $('#me5').text(moment(date).format());
+        $('#me6').text(moment("20111031", "YYYYMMDD").fromNow());
+        $('#me7').text(moment("20120620", "YYYYMMDD").fromNow());
+        $('#me8').text(moment(date).startOf('day').fromNow());
+        $('#me9').text(moment(date).endOf('day').fromNow());
+        $('#me10').text(moment(date).startOf('hour').fromNow());
+        $('#me11').text(moment(date).subtract(10, 'days').calendar());
+        $('#me12').text(moment(date).subtract(6, 'days').calendar());
+        $('#me13').text(moment(date).subtract(3, 'days').calendar());
+        $('#me14').text(moment(date).subtract(1, 'days').calendar());
+        $('#me15').text(moment(date).calendar());
+        $('#me16').text(moment(date).add(1, 'days').calendar());
+        $('#me17').text(moment(date).add(3, 'days').calendar());
+        $('#me18').text(moment(date).add(10, 'days').calendar());
+        $('#me19').text(moment(date).format('LT'));
+        $('#me20').text(moment(date).format('LTS'));
+        $('#me21').text(moment(date).format('L'));
+        $('#me22').text(moment(date).format('l'));
+        $('#me23').text(moment(date).format('LL'));
+        $('#me24').text(moment(date).format('ll'));
+        $('#me25').text(moment(date).format('LLL'));
+        $('#me26').text(moment(date).format('lll'));
+        $('#me27').text(moment(date).format('LLLL'));
+        $('#me28').text(moment(date).format('llll'));
+      }
     }
   </script>
 </body>
