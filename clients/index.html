@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>J7's Clients Map</title>
+  <style type="text/css">
+    body {
+      color: #5d5d5d;
+      background-color: darkgray;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .mapael .map {
+      position: relative;
+    }
+
+    .mapael .zoomButton {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      color: #000;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 3px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      font-weight: bold;
+      left: 10px;
+
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    .mapael .zoomReset {
+      top: 10px;
+    }
+
+    .mapael .zoomIn {
+      top: 30px;
+    }
+
+    .mapael .zoomOut {
+      top: 50px;
+    }
+
+    .mapael .mapTooltip {
+      position: absolute;
+      background-color: #fff;
+      moz-opacity: 0.70;
+      opacity: 0.70;
+      filter: alpha(opacity=70);
+      border-radius: 10px;
+      padding: 10px;
+      z-index: 1000;
+      max-width: 200px;
+      display: none;
+      color: #343434;
+    }
+  </style>
+
+  <script src="./js/jquery.min.js" charset="utf-8"></script>
+  <script src="./js/jquery.mousewheel.min.js" charset="utf-8"></script>
+  <script src="./js/raphael.min.js" charset="utf-8"></script>
+  <script src="./js/jquery.mapael.min.js" charset="utf-8"></script>
+  <script src="./js/world_countries.min.js" charset="utf-8"></script>
+  <script src="./js/world_countries_mercator.min.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(function () {
+
+      var cities_plots = {
+        "ulaanbaatar": {
+          latitude: 47.8864,
+          longitude: 106.9057,
+          attrs: {
+            opacity: 1,
+            fill: "#fff"
+          },
+          text: {
+            content: "J7",
+            position: "inner",
+            attrs: {
+              "font-size": 8,
+              "font-weight": "bold",
+              fill: "black"
+            }
+          },
+          tooltip: {
+            content: "Ulaanbaatar<br/><small>J7</small>"
+          },
+          href: "http://javkhaanj7.mn/",
+          target: "_blank"
+        },
+        "sollentuna": {
+          latitude: 59.4541,
+          longitude: 17.9243,
+          tooltip: {
+            content: "Sollentuna<br/><small>Client 1</small>"
+          }
+        },
+        "sanJose": {
+          latitude: 37.3382,
+          longitude: -121.8863,
+          tooltip: {
+            content: "San Jose<br/><small>Client 2</small>"
+          }
+        },
+        "karaikudi": {
+          latitude: 10.0731,
+          longitude: 78.7802,
+          tooltip: {
+            content: "Karaikudi<br/><small>Client 3</small>"
+          }
+        },
+        "hyderabad": {
+          latitude: 17.3850,
+          longitude: 78.4867,
+          tooltip: {
+            content: "Hyderabad<br/><small>Client 4</small>"
+          }
+        },
+        "mohali": {
+          latitude: 30.7046,
+          longitude: 76.7179,
+          tooltip: {
+            content: "Mohali<br/><small>Client 5</small>"
+          }
+        },
+        "mumbai": {
+          latitude: 19.0760,
+          longitude: 72.8777,
+          tooltip: {
+            content: "Mumbai<br/><small>Client 6</small>"
+          }
+        },
+        "spain": {
+          latitude: 41.23,
+          longitude: 2.09,
+          tooltip: {
+            content: "Spain<br/>Client 7</small>"
+          }
+        }
+      };
+
+      var getElemID = function (elem) {
+        // Show element ID
+        return $(elem.node).attr("data-id");
+      };
+
+      $(".mapcontainer_merc").mapael({
+        map: {
+          name: "world_countries_mercator",
+          zoom: {
+            enabled: true,
+            maxLevel: 10
+          },
+          defaultArea: {
+            tooltip: {
+              content: getElemID
+            }
+          },
+          defaultLink: {
+            factor: 0.4,
+            attrsHover: {
+              stroke: "#a4e100"
+            }
+          }
+        },
+        plots: cities_plots,
+        links: {
+          'ulaanbaatarSollentuna': {
+            factor: 0.2,
+            between: ['ulaanbaatar', 'sollentuna'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarSanJose': {
+            factor: 0.15,
+            between: ['ulaanbaatar', 'sanJose'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarKaraikudi': {
+            factor: 0.2,
+            between: ['ulaanbaatar', 'karaikudi'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarHyderabad': {
+            factor: 0.2,
+            between: ['ulaanbaatar', 'hyderabad'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarMohali': {
+            factor: 0.2,
+            between: ['ulaanbaatar', 'mohali'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarMumbai': {
+            factor: 0.2,
+            between: ['ulaanbaatar', 'mumbai'],
+            attrs: {
+              "stroke-width": 3
+            }
+          },
+          'ulaanbaatarSpain': {
+            factor: -0.1,
+            between: ['ulaanbaatar', 'spain'],
+            attrs: {
+              "stroke-width": 3
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>J7's Clients Map</h1>
+    <div class="mapcontainer_merc">
+      <div class="map">
+        <span>J7's Clients Map</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
