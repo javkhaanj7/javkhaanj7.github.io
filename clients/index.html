@@ -7,23 +7,27 @@
   <style type="text/css">
     body {
       color: #5d5d5d;
-      background-color: darkgray;
+      background-color: #f2f2f2;
       font-family: Helvetica, Arial, sans-serif;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 50px;
       margin: auto;
-      margin-top: 50px;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
     .mapael .map {
       position: relative;
+    }
+
+    .map {
+      width: 100%;
+      text-align: center;
     }
 
     .mapael .zoomButton {
@@ -75,6 +79,8 @@
     }
   </style>
 
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/moment-timezone-with-data.min.js"></script>
   <script src="./js/jquery.min.js" charset="utf-8"></script>
   <script src="./js/jquery.mousewheel.min.js" charset="utf-8"></script>
   <script src="./js/raphael.min.js" charset="utf-8"></script>
@@ -84,6 +90,11 @@
 
   <script type="text/javascript">
     $(function () {
+
+      var contentBy = function (flag, city, timezone, content) {
+        return '<small>' + content + '</small><br/><img src="./flags/' + flag + '.png"> ' + city +
+          '<br/><small>' + moment().tz(timezone).format('llll') + '</small>';
+      };
 
       var cities_plots = {
         "ulaanbaatar": {
@@ -103,64 +114,214 @@
             }
           },
           tooltip: {
-            content: "Ulaanbaatar<br/><small>J7</small>"
+            content: function () {
+              return contentBy('mn', 'Ulaanbaatar, Mongolia', 'Asia/Ulaanbaatar', 'J7');
+            }
           },
           href: "http://javkhaanj7.mn/",
           target: "_blank"
         },
         "sollentuna": {
+          size: 10,
           latitude: 59.4541,
           longitude: 17.9243,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Sollentuna<br/><small>Client 1</small>"
+            content: function () {
+              return contentBy('se', 'Sollentuna, Sweden', 'Europe/Stockholm', '#1');
+            }
           }
         },
         "sanJose": {
-          latitude: 37.3382,
-          longitude: -121.8863,
+          size: 5,
+          latitude: 37.240096,
+          longitude: -121.761948,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "San Jose<br/><small>Client 2</small>"
+            content: function () {
+              return contentBy('us', 'San Jose, USA', 'America/Los_Angeles', '#2');
+            }
           }
         },
         "karaikudi": {
+          size: 10,
           latitude: 10.0731,
           longitude: 78.7802,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Karaikudi<br/><small>Client 3</small>"
+            content: function () {
+              return contentBy('in', 'Karaikudi, India', 'Asia/Kolkata', '#3');
+            }
           }
         },
         "hyderabad": {
+          size: 10,
           latitude: 17.3850,
           longitude: 78.4867,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Hyderabad<br/><small>Client 4</small>"
+            content: function () {
+              return contentBy('in', 'Hyderabad, India', 'Asia/Kolkata', '#4');
+            }
           }
         },
         "mohali": {
+          size: 10,
           latitude: 30.7046,
           longitude: 76.7179,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Mohali<br/><small>Client 5</small>"
+            content: function () {
+              return contentBy('in', 'Mohali, India', 'Asia/Kolkata', '#5');
+            }
           }
         },
         "mumbai": {
+          size: 10,
           latitude: 19.0760,
           longitude: 72.8777,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Mumbai<br/><small>Client 6</small>"
+            content: function () {
+              return contentBy('in', 'Mumbai, India', 'Asia/Kolkata', '#6, #7');
+            }
           }
         },
-        "spain": {
-          latitude: 41.23,
-          longitude: 2.09,
+        "pontevedra": {
+          size: 10,
+          latitude: 42.237543,
+          longitude: -8.711054,
+          attrs: {
+            fill: "#a4e100"
+          },
           tooltip: {
-            content: "Spain<br/>Client 7</small>"
+            content: function () {
+              return contentBy('es', 'Pontevedra, Spain', 'Europe/Madrid', '#8');
+            }
+          }
+        },
+        "turkey": {
+          size: 10,
+          latitude: 41.0082,
+          longitude: 28.9784,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('tr', 'Istanbul, Turkey', 'Europe/Istanbul', '#9');
+            }
+          }
+        },
+        "kfarSaba": {
+          size: 10,
+          latitude: 32.180830,
+          longitude: 34.906812,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('il', 'Kfar Saba, Israel', 'Asia/Jerusalem', '#10');
+            }
+          }
+        },
+        "maceió": {
+          size: 10,
+          latitude: -9.650420,
+          longitude: -35.708893,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('br', 'Maceió, Brazil', 'America/Maceio', '#11');
+            }
+          }
+        },
+        "malolosCity": {
+          size: 10,
+          latitude: 14.850986,
+          longitude: 120.815581,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('ph', 'Malolos City, Philippines ', 'Asia/Manila', '#12');
+            }
+          }
+        },
+        "sofia": {
+          size: 10,
+          latitude: 42.691227,
+          longitude: 23.318787,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('bg', 'Sofia, Bulgaria', 'Europe/Sofia', '#13');
+            }
+          }
+        },
+        "berlin": {
+          size: 10,
+          latitude: 52.518928,
+          longitude: 13.405359,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('de', 'Berlin, Germany', 'Europe/Berlin', '#14');
+            }
+          }
+        },
+        "fosterCity": {
+          size: 5,
+          latitude: 37.558720,
+          longitude: -122.267886,
+          attrs: {
+            fill: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Foster City, USA', 'America/Los_Angeles', '#15');
+            }
+          }
+        },
+        "bologna": {
+          size: 10,
+          latitude: 44.499398,
+          longitude: 11.342670,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('it', 'Bologna, Italy', 'Europe/Rome', '#16');
+            }
           }
         }
       };
 
       var getElemID = function (elem) {
-        // Show element ID
         return $(elem.node).attr("data-id");
       };
 
@@ -172,6 +333,10 @@
             maxLevel: 10
           },
           defaultArea: {
+            attrs: {
+              fill: "#1c1c1c",
+              stroke: "#000000"
+            },
             tooltip: {
               content: getElemID
             }
@@ -181,6 +346,17 @@
             attrsHover: {
               stroke: "#a4e100"
             }
+          },
+          afterInit: function ($self, paper, areas, plots, options) {
+            $('.mapcontainer_merc .map').unbind('resizeEnd');
+            $(window).on('resize', function () {
+              var viewportHeight = $(window).height();
+              paper.setSize(
+                $.mapael.maps['world_countries_mercator'].width *
+                (viewportHeight / $.mapael.maps['world_countries_mercator'].height) - 100,
+                viewportHeight
+              );
+            }).trigger('resize');
           }
         },
         plots: cities_plots,
@@ -189,49 +365,112 @@
             factor: 0.2,
             between: ['ulaanbaatar', 'sollentuna'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
           'ulaanbaatarSanJose': {
-            factor: 0.15,
+            factor: -0.4,
             between: ['ulaanbaatar', 'sanJose'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
           'ulaanbaatarKaraikudi': {
             factor: 0.2,
             between: ['ulaanbaatar', 'karaikudi'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
           'ulaanbaatarHyderabad': {
             factor: 0.2,
             between: ['ulaanbaatar', 'hyderabad'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
           'ulaanbaatarMohali': {
-            factor: 0.2,
+            factor: 0.1,
             between: ['ulaanbaatar', 'mohali'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
           'ulaanbaatarMumbai': {
             factor: 0.2,
             between: ['ulaanbaatar', 'mumbai'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
             }
           },
-          'ulaanbaatarSpain': {
-            factor: -0.1,
-            between: ['ulaanbaatar', 'spain'],
+          'ulaanbaatarMumbai2': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'mumbai'],
             attrs: {
-              "stroke-width": 3
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarPontevedra': {
+            factor: -0.15,
+            between: ['ulaanbaatar', 'pontevedra'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarTurkey': {
+            factor: -0.1,
+            between: ['ulaanbaatar', 'turkey'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarKfarSaba': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'kfarSaba'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarMaceió': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'maceió'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarMalolosCity': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'malolosCity'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarSofia': {
+            factor: -0.1,
+            between: ['ulaanbaatar', 'sofia'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarBerlin': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'berlin'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarFosterCity': {
+            factor: -0.45,
+            between: ['ulaanbaatar', 'fosterCity'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarBologna': {
+            factor: -0.1,
+            between: ['ulaanbaatar', 'bologna'],
+            attrs: {
+              "stroke-width": 1
             }
           }
         }
@@ -244,6 +483,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
+    <small>Last updated date: 04/12/2019</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
