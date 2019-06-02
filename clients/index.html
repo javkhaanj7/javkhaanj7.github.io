@@ -67,9 +67,9 @@
     .mapael .mapTooltip {
       position: absolute;
       background-color: #fff;
-      moz-opacity: 0.70;
-      opacity: 0.70;
-      filter: alpha(opacity=70);
+      -moz-opacity: 0.90;
+      opacity: 0.90;
+      filter: alpha(opacity=90);
       border-radius: 10px;
       padding: 10px;
       z-index: 1000;
@@ -135,15 +135,15 @@
           }
         },
         "sanJose": {
-          size: 5,
+          size: 10,
           latitude: 37.240096,
           longitude: -121.761948,
           attrs: {
-            fill: "#a4e100"
+            fill: "#7cfc00"
           },
           tooltip: {
             content: function () {
-              return contentBy('us', 'San Jose, USA', 'America/Los_Angeles', '#2');
+              return contentBy('us', 'San Jose, CA, USA', 'America/Los_Angeles', '#2');
             }
           }
         },
@@ -169,7 +169,7 @@
           },
           tooltip: {
             content: function () {
-              return contentBy('in', 'Hyderabad, India', 'Asia/Kolkata', '#4');
+              return contentBy('in', 'Hyderabad, India', 'Asia/Kolkata', '#4, #19');
             }
           }
         },
@@ -291,7 +291,7 @@
           }
         },
         "fosterCity": {
-          size: 5,
+          size: 10,
           latitude: 37.558720,
           longitude: -122.267886,
           attrs: {
@@ -299,7 +299,7 @@
           },
           tooltip: {
             content: function () {
-              return contentBy('us', 'Foster City, USA', 'America/Los_Angeles', '#15');
+              return contentBy('us', 'Foster City, CA, USA', 'America/Los_Angeles', '#15');
             }
           }
         },
@@ -316,6 +316,54 @@
           tooltip: {
             content: function () {
               return contentBy('it', 'Bologna, Italy', 'Europe/Rome', '#16');
+            }
+          }
+        },
+        "naperville": {
+          size: 10,
+          latitude: 41.753190,
+          longitude: -88.155234,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Naperville, IL, USA', 'America/Chicago', '#17');
+            }
+          }
+        },
+        "jakarta": {
+          size: 10,
+          latitude: -6.221271,
+          longitude: 106.899986,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('id', 'East Jakarta, Indonesia', 'Asia/Jakarta', '#18');
+            }
+          }
+        },
+        "singapore": {
+          size: 10,
+          latitude: 1.346866,
+          longitude: 103.870359,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('sg', 'Singapore', 'Asia/Singapore', '#20');
             }
           }
         }
@@ -384,6 +432,13 @@
           },
           'ulaanbaatarHyderabad': {
             factor: 0.2,
+            between: ['ulaanbaatar', 'hyderabad'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarHyderabad2': {
+            factor: 0.1,
             between: ['ulaanbaatar', 'hyderabad'],
             attrs: {
               "stroke-width": 1
@@ -472,6 +527,27 @@
             attrs: {
               "stroke-width": 1
             }
+          },
+          'ulaanbaatarNaperville': {
+            factor: -0.35,
+            between: ['ulaanbaatar', 'naperville'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarJakarta': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'jakarta'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarSingapore': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'singapore'],
+            attrs: {
+              "stroke-width": 1
+            }
           }
         }
       });
@@ -483,7 +559,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated date: 04/12/2019</small>
+    <small>Last updated at 06/02/2019</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
