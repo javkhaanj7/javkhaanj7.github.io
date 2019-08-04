@@ -366,6 +366,38 @@
               return contentBy('sg', 'Singapore', 'Asia/Singapore', '#20');
             }
           }
+        },
+        "udine": {
+          size: 10,
+          latitude: 46.062985,
+          longitude: 13.236185,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('it', 'Udine, Italy', 'Europe/Rome', '#21');
+            }
+          }
+        },
+        "leonardtown": {
+          size: 10,
+          latitude: 38.302435,
+          longitude: -76.642871,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Leonardtown, MD, USA', 'America/New_York', '#22');
+            }
+          }
         }
       };
 
@@ -548,6 +580,20 @@
             attrs: {
               "stroke-width": 1
             }
+          },
+          'ulaanbaatarUdine': {
+            factor: -0.1,
+            between: ['ulaanbaatar', 'udine'],
+            attrs: {
+              "stroke-width": 1
+            }
+          },
+          'ulaanbaatarLeonardtown': {
+            factor: -0.35,
+            between: ['ulaanbaatar', 'leonardtown'],
+            attrs: {
+              "stroke-width": 1
+            }
           }
         }
       });
@@ -559,7 +605,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at 06/02/2019</small>
+    <small>Last updated at 08/04/2019</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
