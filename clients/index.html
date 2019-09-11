@@ -398,6 +398,22 @@
               return contentBy('us', 'Leonardtown, MD, USA', 'America/New_York', '#22');
             }
           }
+        },
+        "marinaDelRey": {
+          size: 10,
+          latitude: 33.979178,
+          longitude: -118.451663,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Marina Del Rey, CA, USA', 'America/Los_Angeles', '#23');
+            }
+          }
         }
       };
 
@@ -594,6 +610,13 @@
             attrs: {
               "stroke-width": 1
             }
+          },
+          'ulaanbaatarMarinaDelRey': {
+            factor: -0.4,
+            between: ['ulaanbaatar', 'marinaDelRey'],
+            attrs: {
+              "stroke-width": 1
+            }
           }
         }
       });
@@ -605,7 +628,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at 08/04/2019</small>
+    <small>Last updated at 09/11/2019</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
