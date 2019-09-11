@@ -26,7 +26,7 @@ Thanks for visiting to my page
 
 | General                                | Front-End                                | Back-End                      | Other                                    |
 | :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
-| Java, JavaScript, TypeScript, Ruby on Rails, PHP | HTML, CSS, Bootstrap, D3.js, Angular v8+, React | MongoDB, Node.js, Express.js | Git, Android, UNIX, Agile, Scrum |
+| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Bootstrap v4, D3.js, Angular v8+, React | MongoDB, Node.js, Express.js, Spring Boot 2.0, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
 
 ---
 
