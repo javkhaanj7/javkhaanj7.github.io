@@ -6,9 +6,11 @@
   <title>J7's Clients Map</title>
   <style type="text/css">
     body {
+      width: 100%;
       color: #5d5d5d;
       background-color: #f2f2f2;
       font-family: Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -17,7 +19,7 @@
     }
 
     .container {
-      max-width: 900px;
+      width: 80%;
       margin: auto;
     }
 
@@ -212,7 +214,7 @@
             }
           }
         },
-        "turkey": {
+        "istanbul": {
           size: 10,
           latitude: 41.0082,
           longitude: 28.9784,
@@ -414,6 +416,38 @@
               return contentBy('us', 'Marina Del Rey, CA, USA', 'America/Los_Angeles', '#23');
             }
           }
+        },
+        "medellin": {
+          size: 10,
+          latitude: 6.244053,
+          longitude: -75.567776,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('co', 'Medellin, Colombia', 'America/Bogota', '#24');
+            }
+          }
+        },
+        "celje": {
+          size: 10,
+          latitude: 46.238947,
+          longitude: 15.267201,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('si', 'Celje, Slovenia', 'Europe/Ljubljana', '#25');
+            }
+          }
         }
       };
 
@@ -426,7 +460,7 @@
           name: "world_countries_mercator",
           zoom: {
             enabled: true,
-            maxLevel: 10
+            maxLevel: 15
           },
           defaultArea: {
             attrs: {
@@ -458,10 +492,15 @@
         plots: cities_plots,
         links: {
           'ulaanbaatarSollentuna': {
-            factor: 0.2,
+            factor: 0.15,
             between: ['ulaanbaatar', 'sollentuna'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Sollentuna - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarSanJose': {
@@ -469,6 +508,11 @@
             between: ['ulaanbaatar', 'sanJose'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'San Jose - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarKaraikudi': {
@@ -476,6 +520,11 @@
             between: ['ulaanbaatar', 'karaikudi'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Karaikudi - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarHyderabad': {
@@ -483,6 +532,11 @@
             between: ['ulaanbaatar', 'hyderabad'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Hyderabad - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarHyderabad2': {
@@ -490,6 +544,11 @@
             between: ['ulaanbaatar', 'hyderabad'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Hyderabad - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMohali': {
@@ -497,6 +556,11 @@
             between: ['ulaanbaatar', 'mohali'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Mohali - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMumbai': {
@@ -504,6 +568,11 @@
             between: ['ulaanbaatar', 'mumbai'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Mumbai - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMumbai2': {
@@ -511,20 +580,35 @@
             between: ['ulaanbaatar', 'mumbai'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Mumbai - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarPontevedra': {
-            factor: -0.15,
+            factor: -0.25,
             between: ['ulaanbaatar', 'pontevedra'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Pontevedra - Ulaanbaatar';
+              }
             }
           },
-          'ulaanbaatarTurkey': {
-            factor: -0.1,
-            between: ['ulaanbaatar', 'turkey'],
+          'ulaanbaatarIstanbul': {
+            factor: 0.08,
+            between: ['ulaanbaatar', 'istanbul'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Istanbul - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarKfarSaba': {
@@ -532,6 +616,11 @@
             between: ['ulaanbaatar', 'kfarSaba'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Kfar Saba - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMaceió': {
@@ -539,6 +628,11 @@
             between: ['ulaanbaatar', 'maceió'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Maceió - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMalolosCity': {
@@ -546,6 +640,11 @@
             between: ['ulaanbaatar', 'malolosCity'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Malolos City - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarSofia': {
@@ -553,13 +652,23 @@
             between: ['ulaanbaatar', 'sofia'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Sofia - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarBerlin': {
-            factor: 0.1,
+            factor: 0.2,
             between: ['ulaanbaatar', 'berlin'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Berlin - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarFosterCity': {
@@ -567,13 +676,23 @@
             between: ['ulaanbaatar', 'fosterCity'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Foster City - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarBologna': {
-            factor: -0.1,
+            factor: -0.22,
             between: ['ulaanbaatar', 'bologna'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Bologna - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarNaperville': {
@@ -581,6 +700,11 @@
             between: ['ulaanbaatar', 'naperville'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Naperville - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarJakarta': {
@@ -588,6 +712,11 @@
             between: ['ulaanbaatar', 'jakarta'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'East Jakarta - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarSingapore': {
@@ -595,13 +724,23 @@
             between: ['ulaanbaatar', 'singapore'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Singapore - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarUdine': {
-            factor: -0.1,
+            factor: -0.24,
             between: ['ulaanbaatar', 'udine'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Udine - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarLeonardtown': {
@@ -609,6 +748,11 @@
             between: ['ulaanbaatar', 'leonardtown'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Leonardtown - Ulaanbaatar';
+              }
             }
           },
           'ulaanbaatarMarinaDelRey': {
@@ -616,6 +760,35 @@
             between: ['ulaanbaatar', 'marinaDelRey'],
             attrs: {
               "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Marina Del Rey - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarMedellin': {
+            factor: 0.15,
+            between: ['ulaanbaatar', 'medellin'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Medellin - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarCelje': {
+            factor: -0.22,
+            between: ['ulaanbaatar', 'celje'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Celje - Ulaanbaatar';
+              }
             }
           }
         }
@@ -628,7 +801,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at 09/11/2019</small>
+    <small>Last updated at 10/06/2019</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
