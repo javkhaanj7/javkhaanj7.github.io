@@ -1,0 +1,22 @@
+.header-right {
+  position: absolute;
+  padding: 10px 10px;
+  top: 0%;
+  right: 0%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.date-at {
+  font-size: 16px;
+}
+
+.contents li {
+  font-size: 26px;
+}
