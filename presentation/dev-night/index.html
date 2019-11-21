@@ -33,7 +33,7 @@
 		<div class="slides">
 			<section style="position: relative;">
 				<h2>Freelance / Remote Work</h2>
-				<a href="https://javkhaanj7.github.io/">Javkhlantugs Nyamdorj</a>
+				<a href="https://javkhaanj7.github.io/" target="_blank">Javkhlantugs Nyamdorj</a>
 				<p>
 					<small>Software Engineer</small>
 				</p>
@@ -56,13 +56,7 @@
 							<li>Sample work</li>
 						</ul>
 					</li>
-					<li>Tips for starting a freelance career
-						<ul>
-							<li>Feedback</li>
-							<li>Profile</li>
-							<li>Sleep loss</li>
-						</ul>
-					</li>
+					<li>Tips for starting a freelance career</li>
 				</ul>
 			</section>
 			<section>
@@ -181,10 +175,41 @@
 				</section>
 				<section data-transition="slide" data-background-transition="zoom">
 					<h3>Job sites</h3>
-					<div class="fragment">
+					<div class="fragment fade-in">
 						<img src="./images/upwork-logo.png" height="100px" alt="upwork-logo" />
 						<img src="./images/freelancer-logo.png" height="100px" alt="freelancer-logo" />
 					</div>
+					<table class="fragment fade-in">
+						<thead>
+							<tr>
+								<th></th>
+								<th nowrap>Fixed-price</th>
+								<th>Hourly rate</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Upwork.com</strong></td>
+								<td>32</td>
+								<td>5 <sup>281 hours</sup></td>
+							</tr>
+							<tr>
+								<td><strong>Freelancer.com</strong></td>
+								<td>1</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td><strong>Direct</strong></td>
+								<td>5</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>43 contracts</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 			</section>
 			<section>
@@ -203,13 +228,93 @@
 					</div>
 				</section>
 				<section>
-					Job offer as Remote worker
+					<p>Job offer as a Remote full-time worker</p>
+					<div class="fragment fade-in">
+						<img src="./images/offer-email.png" height="350px" alt="offer email" />
+						<img src="./images/offer-letter.png" height="350px" alt="offer letter" />
+					</div>
 				</section>
 			</section>
 			<section>
-
+				<h3>Focused technical skills</h3>
+				<p class="fragment fade-in">MEAN stack development</p>
+				<p class="fragment fade-in">
+					<span class="fragment highlight-green">MongoDB</span>
+					<span class="fragment highlight-blue">Express JS</span>
+					<span class="fragment highlight-red">Angular</span>
+					<span class="fragment highlight-green">Node JS</span>
+				</p>
+			</section>
+			<section>
+				<h3>Sample work</h3>
+				<div class="fragment">
+					<p>Long-term contract: 2019/06 - Present</p>
+					<table>
+						<tbody>
+							<tr>
+								<td><strong>Founder of MEDGIC</strong></td>
+								<td>Reid Lim</td>
+							</tr>
+							<tr>
+								<td><strong>Site</strong></td>
+								<td><a href="https://www.medgic.co/" target="_blank">https://www.medgic.co</a></td>
+							</tr>
+							<tr>
+								<td><strong>Location</strong></td>
+								<td>Singapore</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 			<section data-background-iframe="https://medgic.co:4200/" data-background-interactive>
+			</section>
+			<section>
+				<section>
+					<h3>Tips for starting a freelance career</h3>
+					<ul>
+						<li class="fragment">Communication skills
+							<ul>
+								<li>Email writing</li>
+								<li>Try to be available at different time zones</li>
+							</ul>
+						</li>
+						<li class="fragment">Work quality matters</li>
+						<li class="fragment">Getting feedback is most importantly stay competitive as a freelancer</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Portfolio vs. Resume / CV</h3>
+				</section>
+				<section data-background-iframe="https://javkhaanj7.github.io/" data-background-interactive>
+					<div
+						style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 10px; font-size: 20px; text-align: center;">
+						<h2>GitHub Pages</h2>
+						<p>Websites for you and your projects</p>
+						<p><small>Hosted directly from your GitHub repository</small></p>
+					</div>
+				</section>
+				<section>
+					<h3>Sleep loss</h3>
+					<p class="fragment">
+						<small>
+							Freelance and remote workers to work late or skip sleep in order to meet deadlines.
+							Insufficient sleep leads to lower productivity and increased illness
+						</small>
+					</p>
+					<div class="fragment">
+						<img src="./images/sleep-map.jpg" height="350px" alt="sleep map" />
+						<p>
+							<small>
+								Source:
+								<a href="https://www.rand.org/randeurope/research/projects/the-value-of-the-sleep-economy.html"
+									target="_blank">
+									RAND Corporation
+								</a>
+							</small>
+						</p>
+					</div>
+				</section>
 			</section>
 			<section>
 				<h3>Thank you!</h3>
@@ -229,7 +334,9 @@
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true }
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true }
 			]
 		});
 	</script>
