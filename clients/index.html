@@ -464,6 +464,38 @@
               return contentBy('gb', 'London, United Kingdom', 'Europe/London', '#26');
             }
           }
+        },
+        "beersheba": {
+          size: 10,
+          latitude: 31.264357,
+          longitude: 34.788825,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('il', 'Beersheba, Israel', 'Asia/Jerusalem', '#27');
+            }
+          }
+        },
+        "silverSpring": {
+          size: 10,
+          latitude: 39.009904,
+          longitude: -77.029175,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Silver Spring, MD, USA', 'America/New_York', '#28');
+            }
+          }
         }
       };
 
@@ -818,6 +850,30 @@
                 return 'London - Ulaanbaatar';
               }
             }
+          },
+          'ulaanbaatarBeersheba': {
+            factor: 0.11,
+            between: ['ulaanbaatar', 'beersheba'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Beersheba - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarSilverSpring': {
+            factor: -0.36,
+            between: ['ulaanbaatar', 'silverSpring'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Silver Spring - Ulaanbaatar';
+              }
+            }
           }
         }
       });
@@ -829,7 +885,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at 11/18/2019</small>
+    <small>Last updated at 01/10/2020</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
