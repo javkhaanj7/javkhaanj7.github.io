@@ -38,6 +38,8 @@ Thanks for visiting to my page
 
 * **[Weather-mn](https://javkhaanj7.github.io/weather-mn/)** - 5-day weather forecast web application in Mongolia. It based on Angular v4 and developed for Angular learning purpose. Related articles: [part 1](https://medium.com/nomadays/angular-%D0%B0%D1%88%D0%B8%D0%B3%D0%BB%D0%B0%D0%BD-%D1%86%D0%B0%D0%B3-%D0%B0%D0%B3%D0%B0%D0%B0%D1%80-%D0%B2%D0%B5%D0%B1-%D0%B0%D0%BF%D0%BF%D0%BB%D0%B8%D0%BA%D0%B5%D0%B9%D1%88%D0%BD-%D1%85%D3%A9%D0%B3%D0%B6%D2%AF%D2%AF%D0%BB%D1%81%D1%8D%D0%BD-%D0%BD%D1%8C-c8f8b7cc0f69) and [part 2](https://medium.com/nomadays/angular-%D0%B0%D1%88%D0%B8%D0%B3%D0%BB%D0%B0%D0%BD-%D1%86%D0%B0%D0%B3-%D0%B0%D0%B3%D0%B0%D0%B0%D1%80-%D0%B2%D1%8D%D0%B1-%D0%B0%D0%BF%D0%BF%D0%BB%D0%B8%D0%BA%D0%B5%D0%B9%D1%88%D0%BD-%D1%85%D3%A9%D0%B3%D0%B6%D2%AF%D2%AF%D0%BB%D1%81%D1%8D%D0%BD-%D0%BD%D1%8C-2-%D1%80-%D1%85%D1%8D%D1%81%D1%8D%D0%B3-9dce2f7e5f1a)
 
+* **[GitHub Fetcher](https://github.com/javkhaanj7/github-fetcher)** - The app retrieves the most recent commits from given repository using GitHub GraphQL API v4.
+
 * **[Locale-mn](https://javkhaanj7.github.io/locale-mn/)** - How to use examples of Mongolian locale in [Moment.js](https://momentjs.com/).
 
 ---
@@ -50,4 +52,4 @@ Thanks for visiting to my page
 * [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
   > Added Mongolian locale for Datepicker component
 
-##### Last updated at 09/11/2019
+##### Last updated at 01/15/2020
