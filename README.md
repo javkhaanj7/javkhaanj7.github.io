@@ -5,7 +5,6 @@ Thanks for visiting to my page
 #### Full Stack Developer
 
 > [javkhlantugs.nyamdorj@gmail.com](mailto:javkhlantugs.nyamdorj@gmail.com), [javkhaanj7@gmail.com](mailto:javkhaanj7@gmail.com)  
-> [Website](http://javkhaanj7.mn/)  
 
 > [GitHub](https://github.com/javkhaanj7)  
 > [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)  

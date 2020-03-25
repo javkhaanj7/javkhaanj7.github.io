@@ -496,6 +496,54 @@
               return contentBy('us', 'Silver Spring, MD, USA', 'America/New_York', '#28');
             }
           }
+        },
+        "newYork": {
+          size: 10,
+          latitude: 40.739390,
+          longitude: -73.989311,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'New York, NY, USA', 'America/New_York', '#29');
+            }
+          }
+        },
+        "tripoli": {
+          size: 10,
+          latitude: 37.510367,
+          longitude: 22.372296,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('gr', 'Tripoli, Greece', 'Africa/Tripoli', '#30');
+            }
+          }
+        },
+        "latKrabang": {
+          size: 10,
+          latitude: 13.745026,
+          longitude: 100.788487,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('th', 'Lat Krabang, Thailand', 'Asia/Bangkok', '#31');
+            }
+          }
         }
       };
 
@@ -874,6 +922,42 @@
                 return 'Silver Spring - Ulaanbaatar';
               }
             }
+          },
+          'ulaanbaatarNewYork': {
+            factor: -0.31,
+            between: ['ulaanbaatar', 'newYork'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'New York - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarTripoli': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'tripoli'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Tripoli - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarLatKrabang': {
+            factor: 0.1,
+            between: ['ulaanbaatar', 'latKrabang'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Lat Krabang - Ulaanbaatar';
+              }
+            }
           }
         }
       });
@@ -885,7 +969,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at 01/10/2020</small>
+    <small>Last updated at 03/25/2020</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
