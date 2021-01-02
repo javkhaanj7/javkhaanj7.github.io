@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/minimalist-developer/a/react-app/static/css/main.89cdbfd3.chunk.css",
+    "main.js": "/minimalist-developer/a/react-app/static/js/main.fb7e5592.chunk.js",
+    "runtime-main.js": "/minimalist-developer/a/react-app/static/js/runtime-main.c0a41997.js",
+    "static/js/2.8944a76d.chunk.js": "/minimalist-developer/a/react-app/static/js/2.8944a76d.chunk.js",
+    "static/js/3.61097070.chunk.js": "/minimalist-developer/a/react-app/static/js/3.61097070.chunk.js",
+    "index.html": "/minimalist-developer/a/react-app/index.html",
+    "static/js/2.8944a76d.chunk.js.LICENSE.txt": "/minimalist-developer/a/react-app/static/js/2.8944a76d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/minimalist-developer/a/react-app/static/media/mn.5e4557f7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c0a41997.js",
+    "static/js/2.8944a76d.chunk.js",
+    "static/css/main.89cdbfd3.chunk.css",
+    "static/js/main.fb7e5592.chunk.js"
+  ]
+}
