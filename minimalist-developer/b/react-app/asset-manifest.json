@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/minimalist-developer/b/react-app/static/css/main.f6f6d63d.chunk.css",
+    "main.js": "/minimalist-developer/b/react-app/static/js/main.7153e35b.chunk.js",
+    "runtime-main.js": "/minimalist-developer/b/react-app/static/js/runtime-main.6304f2dd.js",
+    "static/css/2.f78597e0.chunk.css": "/minimalist-developer/b/react-app/static/css/2.f78597e0.chunk.css",
+    "static/js/2.c5d890c4.chunk.js": "/minimalist-developer/b/react-app/static/js/2.c5d890c4.chunk.js",
+    "static/js/3.62ea857c.chunk.js": "/minimalist-developer/b/react-app/static/js/3.62ea857c.chunk.js",
+    "index.html": "/minimalist-developer/b/react-app/index.html",
+    "static/js/2.c5d890c4.chunk.js.LICENSE.txt": "/minimalist-developer/b/react-app/static/js/2.c5d890c4.chunk.js.LICENSE.txt",
+    "static/media/flag-icon.min.css": "/minimalist-developer/b/react-app/static/media/zw.f5ceeff7.svg",
+    "static/media/font-awesome.min.css": "/minimalist-developer/b/react-app/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6304f2dd.js",
+    "static/css/2.f78597e0.chunk.css",
+    "static/js/2.c5d890c4.chunk.js",
+    "static/css/main.f6f6d63d.chunk.css",
+    "static/js/main.7153e35b.chunk.js"
+  ]
+}
