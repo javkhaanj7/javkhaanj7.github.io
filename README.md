@@ -10,7 +10,7 @@ Thanks for visiting to my page
 > [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)  
 > [Medium](https://javkhlantugs-nyamdorj.medium.com/)  
 
-> [Upwork](https://www.upwork.com/freelancers/~0142af45bb778e7b8c)  
+> [Upwork](https://www.upwork.com/o/profiles/users/~0142af45bb778e7b8c/)  
 > [Freelancer](https://www.freelancer.com/u/javkhaaj7)  
 
 ---
