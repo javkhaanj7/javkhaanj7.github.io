@@ -8,9 +8,9 @@ Thanks for visiting to my page
 
 > [GitHub](https://github.com/javkhaanj7)  
 > [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)  
-> [Medium](https://medium.com/@javkhlantugs.nyamdorj)  
+> [Medium](https://javkhlantugs-nyamdorj.medium.com/)  
 
-> [Upwork](https://www.upwork.com/o/profiles/users/_~0142af45bb778e7b8c/)  
+> [Upwork](https://www.upwork.com/freelancers/~0142af45bb778e7b8c)  
 > [Freelancer](https://www.freelancer.com/u/javkhaaj7)  
 
 ---
