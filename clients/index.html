@@ -544,6 +544,54 @@
               return contentBy('th', 'Lat Krabang, Thailand', 'Asia/Bangkok', '#31');
             }
           }
+        },
+        "wilmington": {
+          size: 10,
+          latitude: 34.213646,
+          longitude: -77.886835,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Wilmington, NC, USA', 'America/New_York', '#32');
+            }
+          }
+        },
+        "millburn": {
+          size: 8,
+          latitude: 40.734025,
+          longitude: -74.336580,
+          attrs: {
+            fill: "#7cfc00"
+          },
+          attrsHover: {
+            stroke: "#7cfc00"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Millburn, NJ, USA', 'America/New_York', '#33');
+            }
+          }
+        },
+        "garland": {
+          size: 10,
+          latitude: 32.922236,
+          longitude: -96.637986,
+          attrs: {
+            fill: "#a4e100"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('us', 'Garland, TX, USA', 'America/Chicago', '#34');
+            }
+          }
         }
       };
 
@@ -958,6 +1006,42 @@
                 return 'Lat Krabang - Ulaanbaatar';
               }
             }
+          },
+          'ulaanbaatarWilmington': {
+            factor: -0.3,
+            between: ['ulaanbaatar', 'wilmington'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Wilmington - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarMillburn': {
+            factor: -0.33,
+            between: ['ulaanbaatar', 'millburn'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Millburn - Ulaanbaatar';
+              }
+            }
+          },
+          'ulaanbaatarGarland': {
+            factor: -0.38,
+            between: ['ulaanbaatar', 'garland'],
+            attrs: {
+              "stroke-width": 1
+            },
+            tooltip: {
+              content: function () {
+                return 'Garland - Ulaanbaatar';
+              }
+            }
           }
         }
       });
@@ -969,7 +1053,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at Aug 2, 2020</small>
+    <small>Last updated at Mar 8, 2021</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
