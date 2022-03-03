@@ -640,6 +640,22 @@
               return contentBy('ar', 'Olivos, Argentina', 'America/Argentina/Buenos_Aires', '#38');
             }
           }
+        },
+        "tsuenWan": {
+          size: 5,
+          latitude: 22.373591824642016,
+          longitude: 114.11032049484155,
+          attrs: {
+            fill: "#7cfc00"
+          },
+          attrsHover: {
+            stroke: "#a4e100"
+          },
+          tooltip: {
+            content: function () {
+              return contentBy('hk', 'Tsuen Wan, Hong Kong', 'Asia/Hong_Kong', '#39');
+            }
+          }
         }
       };
 
@@ -1126,6 +1142,18 @@
                 return 'Olivos - Ulaanbaatar';
               }
             }
+          },
+          'ulaanbaatarTsuenWan': {
+            factor: 0.15,
+            between: ['ulaanbaatar', 'tsuenWan'],
+            attrs: {
+              "stroke-width": 0.7
+            },
+            tooltip: {
+              content: function () {
+                return 'Tsuen Wan - Ulaanbaatar';
+              }
+            }
           }
         }
       });
@@ -1137,7 +1165,7 @@
 <body>
   <div class="container">
     <h1>J7's Clients Map</h1>
-    <small>Last updated at Nov 11, 2021</small>
+    <small>Last updated at Mar 03, 2022</small>
     <div class="mapcontainer_merc">
       <div class="map">
         <span>J7's Clients Map</span>
