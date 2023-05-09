@@ -4,20 +4,20 @@ Thanks for visiting to my page
 
 #### Full Stack Developer
 
-> [javkhlantugs.nyamdorj@gmail.com](mailto:javkhlantugs.nyamdorj@gmail.com), [javkhaanj7@gmail.com](mailto:javkhaanj7@gmail.com)  
+> [javkhlantugs.nyamdorj@gmail.com](mailto:javkhlantugs.nyamdorj@gmail.com), [javkhaanj7@gmail.com](mailto:javkhaanj7@gmail.com)
 
-> [GitHub](https://github.com/javkhaanj7)  
-> [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)  
-> [Medium](https://javkhlantugs-nyamdorj.medium.com/)  
+> [GitHub](https://github.com/javkhaanj7)
+> [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)
+> [Medium](https://javkhlantugs-nyamdorj.medium.com/)
 
-> [Upwork](https://www.upwork.com/o/profiles/users/~0142af45bb778e7b8c/)  
-> [Freelancer](https://www.freelancer.com/u/javkhaaj7)  
+> [Upwork](https://www.upwork.com/o/profiles/users/~0142af45bb778e7b8c/)
+> [Freelancer](https://www.freelancer.com/u/javkhaaj7)
 
 ---
 
 ## Working remotely for Clients from all around the world - J7 map
 
-[https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)  
+[https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)
 
 ---
 
@@ -25,7 +25,7 @@ Thanks for visiting to my page
 
 | General                                | Front-End                                | Back-End                      | Other                                    |
 | :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
-| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v4, D3.js, Angular v13+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
+| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v4, D3.js, Angular v16+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
 
 ---
 
@@ -51,4 +51,4 @@ Thanks for visiting to my page
 * [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
   > Added Mongolian locale for Datepicker component
 
-##### Last updated at Mar 03, 2022
+##### Last updated at May 09, 2023
