@@ -4,20 +4,20 @@ Thanks for visiting to my page
 
 #### Full Stack Developer
 
-> [javkhlantugs.nyamdorj@gmail.com](mailto:javkhlantugs.nyamdorj@gmail.com), [javkhaanj7@gmail.com](mailto:javkhaanj7@gmail.com)
+> [javkhlantugs.nyamdorj@gmail.com](mailto:javkhlantugs.nyamdorj@gmail.com), [javkhaanj7@gmail.com](mailto:javkhaanj7@gmail.com)  
 
-> [GitHub](https://github.com/javkhaanj7)
-> [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)
-> [Medium](https://javkhlantugs-nyamdorj.medium.com/)
+> [GitHub](https://github.com/javkhaanj7)  
+> [LinkedIn](https://www.linkedin.com/in/javkhlantugs/)  
+> [Medium](https://javkhlantugs-nyamdorj.medium.com/)  
 
-> [Upwork](https://www.upwork.com/o/profiles/users/~0142af45bb778e7b8c/)
-> [Freelancer](https://www.freelancer.com/u/javkhaaj7)
+> [Upwork](https://www.upwork.com/o/profiles/users/~0142af45bb778e7b8c/)  
+> [Freelancer](https://www.freelancer.com/u/javkhaaj7)  
 
 ---
 
 ## Working remotely for Clients from all around the world - J7 map
 
-[https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)
+[https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)  
 
 ---
 
