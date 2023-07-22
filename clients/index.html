@@ -876,6 +876,48 @@
               },
             },
           },
+          cyberjaya: {
+            size: 5,
+            latitude: 2.9371761832159664,
+            longitude: 101.6532151034713,
+            attrs: {
+              fill: "#a4e100",
+            },
+            attrsHover: {
+              stroke: "#a4e100",
+            },
+            tooltip: {
+              content: function () {
+                return contentBy(
+                  "my",
+                  "Cyberjaya, Malaysia",
+                  "Asia/Kuala_Lumpur",
+                  "#43"
+                );
+              },
+            },
+          },
+          amman: {
+            size: 2,
+            latitude: 31.923962201687665,
+            longitude: 35.92009818708285,
+            attrs: {
+              fill: "#a4e100",
+            },
+            attrsHover: {
+              stroke: "#a4e100",
+            },
+            tooltip: {
+              content: function () {
+                return contentBy(
+                  "jo",
+                  "Amman, Jordan",
+                  "Asia/Amman",
+                  "#44"
+                );
+              },
+            },
+          },
         };
 
         var getElemID = function (elem) {
@@ -1402,6 +1444,30 @@
                 },
               },
             },
+            ulaanbaatarCyberjaya: {
+              factor: 0.15,
+              between: ["ulaanbaatar", "cyberjaya"],
+              attrs: {
+                "stroke-width": 0.7,
+              },
+              tooltip: {
+                content: function () {
+                  return "Cyberjaya - Ulaanbaatar";
+                },
+              },
+            },
+            ulaanbaatarAmman: {
+              factor: 0.15,
+              between: ["ulaanbaatar", "amman"],
+              attrs: {
+                "stroke-width": 0.7,
+              },
+              tooltip: {
+                content: function () {
+                  return "Amman - Ulaanbaatar";
+                },
+              },
+            },
           },
         });
       });
@@ -1411,7 +1477,7 @@
   <body>
     <div class="container">
       <h1>J7's Clients Map</h1>
-      <small>Last updated at May 09, 2023</small>
+      <small>Last updated at July 22, 2023</small>
       <div class="mapcontainer_merc">
         <div class="map">
           <span>J7's Clients Map</span>

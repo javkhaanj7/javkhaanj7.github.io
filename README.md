@@ -51,4 +51,4 @@ Thanks for visiting to my page
 * [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
   > Added Mongolian locale for Datepicker component
 
-##### Last updated at May 09, 2023
+##### Last updated at July 22, 2023
