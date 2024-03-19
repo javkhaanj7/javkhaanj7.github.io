@@ -22,6 +22,10 @@
         margin: auto;
       }
 
+      .mapael {
+        margin-top: 30px;
+      }
+
       .mapael .map {
         position: relative;
       }
@@ -577,7 +581,7 @@
                   "gb",
                   "London, United Kingdom",
                   "Europe/London",
-                  "#26, #40"
+                  "#26, #40, #45"
                 );
               },
             },
@@ -909,12 +913,39 @@
             },
             tooltip: {
               content: function () {
-                return contentBy(
-                  "jo",
-                  "Amman, Jordan",
-                  "Asia/Amman",
-                  "#44"
-                );
+                return contentBy("jo", "Amman, Jordan", "Asia/Amman", "#44");
+              },
+            },
+          },
+          lashibi: {
+            size: 5,
+            latitude: 5.686460666837142,
+            longitude: -0.038002235059978434,
+            attrs: {
+              fill: "#a4e100",
+            },
+            attrsHover: {
+              stroke: "#a4e100",
+            },
+            tooltip: {
+              content: function () {
+                return contentBy("gh", "Lashibi, Ghana", "Africa/Accra", "#46");
+              },
+            },
+          },
+          ennetbühl: {
+            size: 5,
+            latitude: 47.23657561446521,
+            longitude: 9.2018529055303164,
+            attrs: {
+              fill: "#a4e100",
+            },
+            attrsHover: {
+              stroke: "#a4e100",
+            },
+            tooltip: {
+              content: function () {
+                return contentBy("ch", "Ennetbühl, Switzerland", "Africa/Accra", "#47");
               },
             },
           },
@@ -1468,6 +1499,30 @@
                 },
               },
             },
+            ulaanbaatarLashibi: {
+              factor: 0.1,
+              between: ["ulaanbaatar", "lashibi"],
+              attrs: {
+                "stroke-width": 0.7,
+              },
+              tooltip: {
+                content: function () {
+                  return "Lashibi - Ulaanbaatar";
+                },
+              },
+            },
+            ulaanbaatarEnnetbühl: {
+              factor: -0.25,
+              between: ["ulaanbaatar", "ennetbühl"],
+              attrs: {
+                "stroke-width": 0.7,
+              },
+              tooltip: {
+                content: function () {
+                  return "Ennetbühl - Ulaanbaatar";
+                },
+              },
+            },
           },
         });
       });
@@ -1477,7 +1532,12 @@
   <body>
     <div class="container">
       <h1>J7's Clients Map</h1>
-      <small>Last updated at July 22, 2023</small>
+      <small>- Clients worldwide who engage my services -</small><br />
+      <small>Total clients: 47</small><br />
+      <small>Total jobs: 80+</small><br />
+      <small>Total hours: 4800+</small><br />
+      <small>Upwork stats: Top Rated with 100% job success</small><br />
+      <small>Last updated at March 19, 2024</small>
       <div class="mapcontainer_merc">
         <div class="map">
           <span>J7's Clients Map</span>

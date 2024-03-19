@@ -25,7 +25,7 @@ Thanks for visiting to my page
 
 | General                                | Front-End                                | Back-End                      | Other                                    |
 | :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
-| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v4, D3.js, Angular v16+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
+| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v5, D3.js, Angular v17+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
 
 ---
 
@@ -51,4 +51,4 @@ Thanks for visiting to my page
 * [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
   > Added Mongolian locale for Datepicker component
 
-##### Last updated at July 22, 2023
+##### Last updated at March 19, 2024
