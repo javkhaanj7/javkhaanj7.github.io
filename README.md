@@ -15,7 +15,7 @@ Thanks for visiting to my page
 
 ---
 
-## Working remotely for Clients from all around the world - J7 map
+## Working Remotely with Clients Worldwide – J7's Global Map
 
 [https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)  
 
@@ -25,7 +25,7 @@ Thanks for visiting to my page
 
 | General                                | Front-End                                | Back-End                      | Other                                    |
 | :------------------------------------- | ---------------------------------------- | ----------------------------- | ---------------------------------------- |
-| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v5, D3.js, Angular v17+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
+| Java, JavaScript, TypeScript, Ruby on Rails, PHP, Android | HTML, CSS, Material Design, Bootstrap v5, D3.js, Angular v19+, React | MongoDB, Node.js, Express.js, Spring Boot 2+, NestJS, Oracle, MySQL, PostgreSQL | Git, Apache, UNIX, Agile, Scrum, SEO |
 
 ---
 
@@ -51,4 +51,4 @@ Thanks for visiting to my page
 * [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)
   > Added Mongolian locale for Datepicker component
 
-##### Last updated at March 19, 2024
+##### Last updated: April 2, 2025
