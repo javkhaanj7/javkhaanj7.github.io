@@ -15,7 +15,7 @@ Thanks for visiting to my page
 
 ---
 
-## Working Remotely with Clients Worldwide – J7's Global Map
+## Working Remotely with Clients Worldwide – J7’s Global Client Map
 
 [https://javkhaanj7.github.io/clients/](https://javkhaanj7.github.io/clients/)  
 
